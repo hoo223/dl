@@ -109,7 +109,7 @@ class RolloutDataManager(object):
 
     def rollout_step(self):
         """Compute one environment step."""
-        print("rollout_step")
+        #print("rollout_step")
         if not self.storage: # storage가 비어있으면 (즉, rollout data가 없을 경우) init_rollout_storage 실행하여 생성
             print("no storage - make new storage")
             self.init_rollout_storage()
